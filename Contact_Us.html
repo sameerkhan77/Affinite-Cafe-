@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html {
+        width: 1vw;
+        font-size: 5px;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+      #logo {
+        width: 40rem;
+        height: 40rem;
+        padding: 6rem;
+        margin: 3rem;
+        border-radius: 100rem;
+      }
+      #logo:hover {
+        box-shadow: 0rem 0rem 147rem 6rem rgb(56 17 2);
+      }
+      .middle:hover {
+        box-shadow: 0rem 0rem 155rem 15rem rgb(61, 6, 4);
+      }
+      .visitcard {
+        /* flex-basis: 12px; */
+        /* box-sizing: border-box; */
+        margin-top: 10rem;
+        width: 80rem;
+        order: 2;
+      }
+      .visitcard:hover {
+        box-shadow: 0rem 0rem 147rem 6rem rgb(100, 3, 32);
+      }
+      #outsideicon1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15rem;
+        background: #1e0d0d;
+        color: aliceblue;
+        border-radius: 349rem;
+        width: 88vw;
+      }
+      #head1 {
+        font-size: 3vw;
+        box-shadow: 0rem 0rem 160rem 12rem rgb(213, 143, 46);
+        color: rgb(156, 118, 103);
+      }
+      #icon1 {
+        display: flex;
+        width: 50rem;
+      }
+      .link {
+        text-decoration: none;
+        color: #b7b7b7;
+        margin: 1rem;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(28, 28, 28);
+        border-radius: 10rem;
+        position: relative;
+        transition: 0.4s;
+      }
+      .link:hover {
+        transform: rotate(45deg);
+      }
+      .link::before {
+        content: " ";
+        position: absolute;
+        width: 3rem;
+        height: 12rem;
+        opacity: 0;
+        background: #373737;
+        border-radius: 10rem;
+        transition: opasity 0.2s;
+      }
+      .link:hover::before {
+        opacity: 0.6;
+      }
+      .link:nth-child(1)::before {
+        background: #c32aa3;
+      }
+      .link:nth-child(2)::before {
+        background: #1da1f2;
+      }
+      .link:nth-child(3)::before {
+        background: #25d366;
+      }
+      .link:nth-child(4)::before {
+        background: #0c0881;
+      }
+      .link:hover::before {
+        transform: translate(1rem, 0rem);
+        filter: blur(1rem);
+        width: 12rem;
+      }
+      .link i {
+        font-size: 6rem;
+        transition: all 0.4s;
+      }
+      iframe {
+        position: absolute;
+        width: 266rem;
+        height: 100rem;
+        left: 20rem;
+        top: 192rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 312px">
+      <img
+        src="Images/IMG_20220929_132950.jpg"
+        alt="Error while loading image"
+        class="up"
+        id="logo"
+      />
+    </div>
+    <div
+      class="middle"
+      id="outsideicon1"
+      style="width: device-width; height: device-height"
+    >
+      <h3 id="head1">For franchise and sponsorships connect with us</h3>
+      <div>
+        <img
+          src="Images/20220929_132518_0000.png"
+          alt="Error while loading image"
+          class="visitcard"
+        />
+        <img
+          src="Images/20220929_132610_0000.png"
+          alt="Error while loading image"
+          class="visitcard"
+        />
+      </div>
+    </div>
+    <div>
+      <iframe src="Images/Affinite Cafe Map.png"></iframe>
+    </div>
+    <br />
+    <div>
+      <div id="icon1">
+        <a href="https://www.instagram.com/" class="link" target="_blank">
+          <i class="fa fa-instagram instagram"></i>
+        </a>
+        <a href="https://twitter.com/" class="link" target="_blank">
+          <i class="fa fa-twitter twitter"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" class="link" target="_blank">
+          <i class="fa fa-whatsapp whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/home" class="link" target="_blank">
+          <i class="fa fa-linkedin linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

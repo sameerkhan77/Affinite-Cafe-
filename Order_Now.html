@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Now</title>
+    <style>
+      html {
+        font-size: 5px;
+        width: 55vw;
+        height: 408vh;
+      }
+      body {
+        background-color: rgb(245, 237, 226);
+       }
+      #logo {
+        width: 174px;
+        height: 168px;
+        padding: 16px;
+        margin: 30px;
+        top: 2rem;
+        border-radius: 101px;
+        position: absolute;
+      }
+      #logo:hover {
+        box-shadow: 0px 0px 147px 62px rgb(56 17 2);
+      }
+      ul {
+        display: flex;
+        position: absolute;
+        left: 80rem;
+        list-style: none;
+        font-size: 4rem;
+        font-weight: 600;
+        background-color:#1e0d0d;
+        border-radius: 4px;
+        top: 10rem;
+        padding: unset;
+      }
+
+      ul:hover {
+        color: black;
+      }
+      ul > li {
+        padding: 7rem;
+        color: antiquewhite;
+      }
+      ul > li > a {
+        color: antiquewhite;
+      }
+      li:hover {
+        box-shadow: 0px 0px 147px 62px rgb(213, 143, 46);
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      .disc {
+        display: block;
+        position: absolute;
+        top: 135rem;
+        font-size: 11rem;
+        animation-name: rtl1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        font-family: "Paytone One";
+        font-size: 35px;
+        line-height: 55px;
+        border-radius: 30%;
+      }
+      .display{
+        display: flex;
+      }
+      .ord{
+        width: 70rem;
+        height: 40rem;
+        position: absolute;
+        top: 86rem;
+        left: 48rem;
+        font-weight:bolder;
+        box-shadow: .5rem .5rem 2rem rgb(45, 7, 7);
+        border-radius: 2rem;
+      }
+      .ord:hover{
+          box-shadow: 1.5rem 1.5rem 3rem #612a2a;
+        }
+      #c1{
+        background-color: blue;
+        margin: 2rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c1>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c2{
+        background-color: red;
+        margin-top: 2rem;
+        margin-left: 82rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c2>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c3{
+        background-color: rgb(2, 51, 14);
+        margin-top: 2rem;
+        margin-left: 164rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c3>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c4{
+        background-color: orange;
+        margin: 2rem;
+        margin-top: 50rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c4>img{
+        width: 20rem;
+    height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c5{
+        background-color: pink;
+        margin-left: 82rem;
+        margin-top: 50rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c5>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c6{
+        background-color: rgb(114, 52, 222);
+        margin-left: 164rem;
+        margin-top: 50rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c6>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    #c7{
+        background-color: gray;
+        margin-top: 100rem;
+        margin-left: 82rem;
+        color: aliceblue;
+        font-size: 4rem;
+      }
+    #c7>img{
+        width: 20rem;
+        height: 20rem;
+        top: 2.5em;
+        left: 7rem;
+        position: absolute;
+        border-radius: 20rem;
+      }
+    p{
+        top: 12rem;
+        position: absolute;
+        left: 33rem;
+      }
+    
+    .buy{
+        position: absolute;
+        width: 12rem;
+        height: 6rem;
+        background-color: rgb(45, 7, 7);
+        text-align: center;
+        top: 28rem;
+        right: 6rem;
+        padding: 1.5rem;
+        border-radius: 10rem;
+        box-shadow: .4rem .4rem 2rem rgb(45, 7, 7);
+        text-decoration: none;
+      }
+      .buy>a{
+        text-decoration: none;
+        color: whitesmoke;
+      }
+    .buy:hover{
+        cursor: pointer;
+      }
+      .buy1{
+        background-color: rgb(45, 7, 7);
+        font-size:4rem;
+        color: whitesmoke;
+        position: absolute;
+        width: 30rem;
+        height: 6rem;
+        padding: 1.5rem;
+        border-radius: 10rem;
+        box-shadow: .4rem .4rem 2rem rgb(45, 7, 7);
+        text-align: center;
+        top: 265rem;
+        left: 100rem;        
+      }
+      .buy1>a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bolder;
+      }
+
+    table {
+        background: rgb(248, 184, 155);
+        padding: 5rem;
+        width: 220rem;
+        font-size: 4rem;
+       }
+    .row {
+        padding: 22px;
+        font-size: 6rem;
+      }
+    td {
+        text-align: center;
+      }
+    .tab{
+        top: 262rem;
+        left: 55rem;
+        position: absolute;
+      }
+      .overallmenu{
+        position: absolute;
+        top: 232rem;
+        width: 308rem;
+      }
+      .Popular_Ones{
+        position: absolute;
+        top: 56rem;
+        width: 308rem;
+
+      }
+      .overallmenu>h1{
+        width: 45rem;
+        left: 144rem;
+    position: relative;
+    font-size: 7rem;
+  }
+      .Popular_Ones>h1{
+        width: 45rem;
+        left: 144rem;
+    position: relative;
+    font-size: 7rem;
+  }
+  h1{
+        color: #612a2a;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 312px">
+        <img
+          src="Images/IMG_20220929_132950.jpg"
+          alt="Error while loading image"
+          class="up"
+          id="logo"
+        />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Order_Now.html" style="text-decoration:none;" target="_self"><strong>ORDER NOW</strong></a></li>
+          <li>
+            <a
+              href="MERCHANDISE.html"
+              style="text-decoration: none"
+              target="_blank"
+              ><strong>OUR MERCHANDISE</strong></a
+            >
+          </li>
+          <li>
+            <a
+              href="coffee_beans.html"
+              style="text-decoration: none"
+              target="_blank"
+              ><strong>COFFEE BEANS</strong></a
+            >
+          </li>
+          <li>
+            <a
+              href="About_Us.html"
+              style="text-decoration: none"
+              target="_blank"
+              ><strong>ABOUT US</strong></a
+            >
+          </li>
+          <li>
+            <a
+              href="Contact_Us.html"
+              style="text-decoration: none"
+              target="_blank"
+              ><strong>CONTACT US</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Popular_Ones">
+      <hr>
+      <h1>Popular Ones</h1>
+      <hr>
+    </div>
+    <div class="display">
+        <div class="ord" id="c1"><img src="images/New folder/Caffe Latte.jpg" alt="Image not found"><p>Latte</p><div class="buy"><a href="payforlatte.html">Buy</a></div></div>
+        <div class="ord" id="c2"><img src="images/New folder/Caramel Java Chip Frappuccino.jpg" alt="Image not found"><p>Caramel Java Chip Frappuccino</p><div class="buy"><a href="payforcarameljava.html">Buy</a></div></div>
+        <div class="ord" id="c3"><img src="images/New folder/Caramel Macchiato.jpg" alt="Image not found"><p>Caramel Macchiato</p><div class="buy"><a href="payformacchiato.html">Buy</a></div></div>
+        <div class="ord" id="c4"><img src="images/New folder/Flat White.jpg" alt="Image not found"><p>Flat White</p><div class="buy"><a href="payforflatwhite.html">Buy</a></div></div>
+        <div class="ord" id="c5"><img src="images/New folder/Iced latte.jpg" alt="Image not found"><p>Iced Latte</p><div class="buy"><a href="payforicedlatte.html">Buy</a></div></div>
+        <div class="ord" id="c6"><img src="images/New folder/Mocha.jpg" alt="Image not found"><p>Mocha</p><div class="buy"><a href="payformocha.html">Buy</a></div></div>
+        <div class="ord" id="c7"><img src="images/New folder/White Mocha.jpg" alt="Image not found"><p>White Mocha</p><div class="buy"><a href="payforwhitemocha.html">Buy</a></div></div>
+    </div>
+    <div class="overallmenu">
+      <hr>
+      <h1>Overall Menu</h1>
+      <hr>
+    </div>
+    <div class="tab">
+      <table>
+        <img src="https://coffee.alexflipnote.dev/random" alt="NET CONNECTION NEEDED" style="opacity: .5;position: absolute;width: 220rem;height: 257rem; display: block;">
+        <thead>
+          <strong
+            ><tr>
+              <th class="row">Espresso & Classic</th>
+              <th class="row">Short</th>
+              <th class="row">Tall</th>
+              <th class="row">Grande</th>
+            </tr></strong
+          >
+        </thead>
+        <tbody>
+          <tr>
+            <td>Flat White</td>
+            <td>250</td>
+            <td>280</td>
+            <td>380</td>
+          </tr>
+          <tr>
+            <td>Caramel Macchiato</td>
+            <td>250</td>
+            <td>275</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>White Mocha</td>
+            <td>230</td>
+            <td>260</td>
+            <td>280</td>
+          </tr>
+          <tr>
+              <td>Caffe Latte</td>
+              <td>200</td>
+              <td>225</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Make Your Own Latte</td>
+              <td>240</td>
+              <td>270</td>
+              <td>295</td>
+            </tr>
+            <tr>
+              <td>Cappuccino</td>
+              <td>200</td>
+              <td>225</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Americano</td>
+              <td>185</td>
+              <td>210</td>
+              <td>235</td>
+            </tr>
+            <tr>
+              <td>Brewed Coffee</td>
+              <td>195</td>
+              <td>220</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Pour Over</td>
+              <td>195</td>
+              <td>220</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Espresso Macchiato</td>
+              <td>230</td>
+              <td>260</td>
+              <td>280</td>
+            </tr>
+        </tbody>
+        <thead>
+          <strong
+            ><tr>
+              <th class="row">Frappuccino</th>
+              <th class="row">Short</th>
+              <th class="row">Tall</th>
+              <th class="row">Grande</th>
+            </tr></strong
+          >
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coffee</td>
+            <td>225</td>
+            <td>250</td>
+            <td>285</td>
+          </tr>
+          <tr>
+            <td>Mocha</td>
+            <td>270</td>
+            <td>295</td>
+            <td>335</td>
+          </tr>
+          <tr>
+            <td>Java Chip</td>
+            <td>260</td>
+            <td>290</td>
+            <td>320</td>
+          </tr>
+          <tr>
+              <td>Caramel/Espresso</td>
+              <td>260</td>
+              <td>290</td>
+              <td>320</td>
+            </tr>
+            <tr>
+              <td>Caramel Java Chip</td>
+              <td>300</td>
+              <td>325</td>
+              <td>360</td>
+            </tr>
+          
+        </tbody>
+        <thead>
+          <strong
+            ><tr>
+              <th class="row">Coffee-Free</th>
+              <th class="row">Short</th>
+              <th class="row">Tall</th>
+              <th class="row">Grande</th>
+            </tr></strong
+          >
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vanilla Cream</td>
+            <td>225</td>
+            <td>250</td>
+            <td>285</td>
+          </tr>
+          <tr>
+            <td>Strawberries & Cream</td>
+            <td>250</td>
+            <td>285</td>
+            <td>310</td>
+          </tr>
+          <tr>
+            <td>Green Tea Cream</td>
+            <td>260</td>
+            <td>290</td>
+            <td>320</td>
+          </tr>
+          <tr>
+              <td>Double Chocolate Chip</td>
+              <td>285</td>
+              <td>310</td>
+              <td>340</td>
+            </tr>
+            <tr>
+              <td>Cold Coffee</td>
+              <td>255</td>
+              <td>280</td>
+              <td>300</td>
+            </tr>
+          
+        </tbody>
+        <thead>
+          <strong
+            ><tr>
+              <th class="row">Iced Coffee</th>
+              <th class="row">Short</th>
+              <th class="row">Tall</th>
+              <th class="row">Grande</th>
+            </tr></strong
+          >
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iced Americano</td>
+            <td>210</td>
+            <td>235</td>
+            <td>260</td>
+          </tr>
+          <tr>
+            <td>Iced Latte</td>
+            <td>225</td>
+            <td>250</td>
+            <td>275</td>
+          </tr>
+         </tbody>
+      </tbody>
+      <thead>
+        <strong
+          ><tr>
+            <th class="row">Smoothies</th>
+            <th class="row">Short</th>
+            <th class="row">Tall</th>
+            <th class="row">Grande</th>
+          </tr></strong
+        >
+      </thead>
+      <tbody>
+        <tr>
+          <td>Black Berry</td>
+          <td>345</td>
+          <td>375</td>
+          <td>405</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>300</td>
+          <td>345</td>
+          <td>390</td>
+        </tr>
+        <tr>
+          <td>Banana Berry</td>
+          <td>310</td>
+          <td>355</td>
+          <td>400</td>
+        </tr>
+         
+      </tbody>
+  </tbody>
+  <thead>
+    <strong
+      ><tr>
+        <th class="row">Brewed Teas/Tea Lattes</th>
+        <th class="row">Short</th>
+        <th class="row">Tall</th>
+        <th class="row">Grande</th>
+      </tr></strong
+    >
+  </thead>
+  <tbody>
+    <tr>
+      <td>Black Tea</td>
+      <td>205</td>
+      <td>235</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>Green Tea</td>
+      <td>215</td>
+      <td>245</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>Green Tea-Mint</td>
+      <td>200</td>
+      <td>220</td>
+      <td>250</td>
+    </tr>
+    <tr>
+        <td>Tea Latte</td>
+        <td>200</td>
+        <td>225</td>
+        <td>250</td>
+      </tr>
+      <div class="buy1"><a href="final_payment.html">Buy</a></div>
+    </tbody>
+    </table>
+    </div>
+  </body>
+</html>

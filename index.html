@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Font styles -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
+    <style>
+      /* html standard */
+      html{
+        font-size: 5px;
+        width: 90vw;
+        height: 100px;
+      }
+      body>img{
+        width: 300rem;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 166rem;
+      }
+      #logo {
+        width: 174px;
+        height: 168px;
+        padding: 16px;
+        margin: 30px;
+        top: 2rem;
+        border-radius: 101px;
+        position: absolute;
+      }
+      #logo:hover {
+        /*box-shadow= x y blur_radius spread_radius color*/
+        box-shadow: 0px 0px 147px 62px rgb(56 17 2);
+      }
+      ul {
+        /* flex=property */
+        display: flex;
+        position: absolute;
+        left: 80rem;
+        /* to remove dot */
+        list-style: none ; 
+        font-size: 4rem;
+        font-weight: 600;
+        background: transparent;
+        border-radius: 4px;
+        top: 10rem;
+        padding: unset;
+      }
+
+      ul:hover {
+        color: black;
+      }
+      ul > li {
+        padding: 7rem;
+        color: black;
+      }
+      ul>li>a{
+        /* to black the color of link */
+        color: black;
+        line-height: 15rem;
+      }
+      li:hover {
+        box-shadow: 0px 0px 147px 62px rgb(213, 143, 46);
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      .disc{
+        /* block = to set widht x and height y according to our choice  */
+        display: block;
+        position: absolute;
+        top: 135rem;
+        font-size: 11rem;
+        animation-name: rtl1;
+        animation-duration: 5s;
+        animation-iteration-count:infinite;
+        line-height:55px;
+        border-radius: 30%;
+      }
+      .write{
+        /* display: flex; */
+        position: absolute;
+        color: rgb(33 1 1);
+        font-size: 16rem;
+        top: 50rem;
+        left: 50rem;
+        right: 50rem;
+        border: 2px solid gray;
+        animation-name: rtl;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        width: 210rem;
+        font-family: Monoton;
+        text-align: center;
+      }
+      @keyframes rtl{
+        0%{
+          left: 0px;
+
+        }
+        20%{
+          left: 20rem;
+      }
+    }
+      @keyframes rtl1{
+        0%{
+          left: 0px;
+          color:rgb(89, 12, 31);
+          box-shadow: 0px 0px 147px 62px rgb(89, 12, 31);
+        }
+        20%{
+          left: 40rem;
+          color:rgb(77, 120, 115);
+          box-shadow: 0px 0px 147px 62px rgb(77, 120, 115) ;
+        }
+        40%{
+          left: 80rem;
+          color:rgb(44, 2, 41);
+          box-shadow: 0px 0px 147px 62px rgb(44, 2, 41);
+        }
+        60%{
+          left: 120rem;
+          color:rgb(83, 39, 58);
+          box-shadow: 0px 0px 147px 62px rgb(83, 39, 58);
+        }
+        80%{
+          left: 160rem;
+          color:rgb(39, 83, 70);
+          box-shadow: 0px 0px 147px 62px rgb(39, 83, 70);
+        }
+        100%{
+          left: 190rem;
+          color:rgb(157, 142, 78);
+          box-shadow: 0px 0px 147px 62px rgb(157, 142, 78);
+        }
+      }
+      .cafeimg{
+        background-image: url(images/cafe_images/105927b558660f2cc8397b654dea55e1.jpg);
+        width: 200rem;
+        height: 147rem;
+        /* position: absolute; */
+        background-repeat: no-repeat;
+        animation-name: cafeimages1;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        background-color: #f0f5f5;
+        }
+        .cafeimg1{
+          background-image: url(images/cafe_images/105927b558660f2cc8397b654dea55e1.jpg);
+          width: 80rem;
+          height: 147rem;
+          position: absolute;
+          top: 168rem;
+          left: 156rem;
+          background-repeat: no-repeat;
+          /* background-attachment: fixed; */
+          animation-name: cafeimages1;
+          animation-duration: 50s;
+          animation-iteration-count: infinite;
+          background-color: #f9fcfc;
+          }
+        @keyframes cafeimages1 {
+        0%{
+          background-image: url(images/cafe_images/105927b558660f2cc8397b654dea55e1.jpg);
+          width: 150rem;
+        }
+        10%{
+          background-image: url(images/cafe_images/3023cb6b3e9189d01efa5a6c30f8b90f.jpg);
+          width: 150rem;
+        }
+        20%{
+          background-image: url(images/cafe_images/3313a877b8519aeb3a3f9403581233e4.jpg);
+          width: 150rem;
+        }
+        30%{
+          background-image: url(images/cafe_images/38e287ad8e297f3613de7d4eaf28ae11.jpg);
+          width: 150rem;
+        }
+        40%{
+          background-image: url(images/cafe_images/3f6edfbfb62a86d8c24c9c2d9fcd90af.jpg);
+          width: 150rem;
+        }
+        50%{
+          background-image: url(images/cafe_images/5edddd440035f05bee9ab16494a9a957.jpg);
+          width: 150rem;
+        }
+        60%{
+          background-image: url(images/cafe_images/5f0ac80ca30bd4917eccccc838af1ca2.jpg);
+          width: 150rem;
+        }
+        70%{
+          background-image: url(images/cafe_images/6aef63cf78a6adf92aaa3560651a4a46.jpg);
+          width: 150rem;
+        }
+        80%{
+          background-image: url(images/cafe_images/8a2c50094a5292bb3b89748dede65141.jpg);
+          width: 150rem;
+        }
+        90%{
+          background-image: url(images/cafe_images/9092dde0a3905eb7e7c836ed6e389b5b.jpg);
+          width: 150rem;
+        }
+        100%{
+          background-image: url(Images/cafe_images/999ab93fc29b5831344543f215781441.jpg);
+          width: 150rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/Images/homepageimg/1c34a229be9e1979910dc44ee207498b.jpg" alt="image not found" style="opacity: 0.9;">
+    <div style="width: 312px">
+      <a href="Home.html"><img
+        src="Images/IMG_20220929_132950.jpg"
+        alt="Error while loading image"
+        class="up"
+        id="logo"
+      /></a>
+    <div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="Order_Now.html" style="text-decoration:none;" target="_blank"><strong>ORDER NOW</strong></a></li>
+            <li><a href="MERCHANDISE.html" style="text-decoration:none;" target="_blank"><strong>OUR MERCHANDISE</strong></a></li>
+            <li><a href="coffee_beans.html" style="text-decoration:none;" target="_blank"><strong>COFFEE BEANS</strong></a></li>
+            <li><a href="About_Us.html" style="text-decoration:none;" target="_blank"><strong>ABOUT US</strong></a></li>
+            <li>
+              <a
+                href="Contact_Us.html"
+                style="text-decoration: none;"
+                target="_blank"><strong>CONTACT US</strong></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="write"><strong>  Go-to  Spot   for   Delicious   Eats   &   Coffee</strong></div>
+      <div class="disc">25% off on popular items</div>
+    </div>
+    <!-- last 2 animations  -->
+    <div class="cafeimg"></div><div class="cafeimg1"></div>
+  </body>
+</html>
